@@ -1,6 +1,6 @@
 function matrixTrace(matrix) {
-    var trace = 0;
-    for (var i = 0; i < matrix.length; i++) {
+    let trace = 0;
+    for (let i = 0; i < matrix.length; i++) {
         trace += matrix[i][i];
     }
     return trace;

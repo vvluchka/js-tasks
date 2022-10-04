@@ -1,7 +1,5 @@
-function Descending(n){
-  var digits = (""+n).split("").sort(function(a, b){return b-a});
-  digits = digits.join("");
-  return Number(digits);
+function descendingOrder(n) {
+    return parseInt(n.toString().split('').sort().reverse().join(''));
 }
 
-console.log(Descending(1233456444789));
+console.log(descendingOrder(123456789));

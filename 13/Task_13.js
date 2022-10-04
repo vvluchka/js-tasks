@@ -1,5 +1,4 @@
-function removespecialcharacters(str){
-    var regex = /[^a-zA-Z0-9]/g;
-    return str.replace(regex, '');
-}
-console.log(removespecialcharacters("Hello World!.@#$%^&*()"));
+const str = '_-H!e@l#l$o W%o^&l*d-_';
+
+const noSpecialCharacters = str.replace(/[^\w -]/g, '');
+console.log(noSpecialCharacters); 

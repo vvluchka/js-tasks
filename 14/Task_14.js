@@ -1,8 +1,6 @@
-function mathematicalExpressionCheck(a, b, c) {
-    if (a + b === c) {
-        return true;
-    } else {
-        return false;
-    }
+function isMathExp(str) {
+    let regExp = /^[\d+\-*/.]+$/;
+    return regExp.test(str);
 }
-console.log(mathematicalExpressionCheck("no", 2, 4));
+
+console.log(isMathExp("1+1"));

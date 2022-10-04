@@ -1,15 +1,15 @@
-function whatMissingLetter(str) {
-    var alphabet = 'abcdefghijklmnopqrstuvwxyz';
-    var start = alphabet.indexOf(str[0]);
-    var end = alphabet.indexOf(str[str.length - 1]);
-    var missing = [];
-    for (var i = start; i < end; i++) {
-        if (str.indexOf(alphabet[i]) === -1) {
-            missing.push(alphabet[i]);
+function fearNotLetter(str) {
+    var i, j = 0, m = 122;
+    if (str) {
+        i = str.charCodeAt(0);
+        while (i <= m && j < str.length) {
+            if (String.fromCharCode(i) !== str.charAt(j)) {
+                return String.fromCharCode(i);
+            }
+            i++; j++;
         }
-       
     }
-    return (missing.length > 0) ? missing.join(' ') : 'No Missing Letters';
+    return "No Missing Letter";
 }
 
-console.log(whatMissingLetter("gijkmno"));
+console.log(fearNotLetter("abce"));

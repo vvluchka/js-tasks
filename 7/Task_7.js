@@ -3,26 +3,26 @@ class calculator {
         this.result = 0;
     }
 
-    add(a, b) {
+    Add(a, b) {
         this.result = a + b;
         return this;
     }
 
-    subtract(a, b) {
+    Subtract(a, b) {
         this.result = a - b;
         return this;
     }
 
-    multiply(a ,b) {
+    Multiply(a ,b) {
         this.result = a * b;
         return this;
     }
 
-    divide(a, b) {
+    Divide(a, b) {
         this.result = a/b;
         return this;
     }
 
 }
 
-console.log(new calculator().divide(10, 2));
+console.log(new calculator().Add(7, 8).result);

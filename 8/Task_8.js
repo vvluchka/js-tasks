@@ -1,10 +1,12 @@
 function keysAndValues(obj) {
-  var keys = [];
-  var values = [];
-  for (var key in obj) {
-      keys.push(key);
-      values.push(obj[key]);
-  }
-  return [keys, values];
+  let keys = Object.keys(obj);
+  let values = Object.values(obj);
+  let result = [keys.sort(), values.sort()];
+  return result;
 }
-console.log(keysAndValues({ a: 1, b: 2, c: 3 }));
+console.log(keysAndValues({
+  b: 2,
+  h: 4,
+  a: 1,
+  c: 3
+}));
